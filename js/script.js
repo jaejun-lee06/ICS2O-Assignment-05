@@ -4,6 +4,15 @@
 
 
 /**
+ * Check servie worker.
+*/
+if (navigator.serviceWorker) {
+  navigator.serviceWorker.register("/ICS2O-Assignment-05/sw.js", {
+    scope: "/ICS2O-Assignment-05/",
+  });
+}
+
+/**
  * This function
  */
 function myButtonClicked() {
